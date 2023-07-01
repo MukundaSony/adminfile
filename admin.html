@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Admin pannel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="admin.css"> -->
+    <style>
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #8767b3, #5c3d3e);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  h1{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Roboto Slab', serif;
+  }
+
+ .dip{
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 3rem 0rem;
+ }
+
+ .checkvul{
+    margin-top: 2rem;
+ }
+ .checkupdate{
+    margin-top: 2rem;
+ }
+ .upgrade{
+    margin-top: 5rem;
+ }
+ .revert{
+    margin-top: 1rem;
+ }
+ .hidden1 {
+    display:none;
+  }
+    
+  .bell{
+   position: relative;
+   top: -5rem;
+   left: 73rem;
+   
+  }
+
+  .animatedbell {
+    animation-name: bell;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 8;
+  }
+  
+  @keyframes bell {
+    0% {
+    filter: none;
+    }
+    50% {
+      filter: invert(100%); /* midway through the animation */
+    }
+    100% {
+      filter: none; /* final state */
+    }
+  }
+    </style>
+
+</head>
+<body>
+    <section id="title" class="gradient-background container-fluid">
+        <!-- <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 border "> -->
+          <!-- <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"> -->
+            <h1 class="display-4 fw-bold lh-1 ">ADMIN PANEL</h1>
+            <span class="bell"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell-fill " viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+              </svg></span>
+          <!-- </div> -->
+        <!-- </div> -->
+    </section>
+
+    <div class="dip">Dependencies..</div>
+
+    <section id="table">
+        <div class="container-fluid">
+        <div class="bd-example">
+            <table class="table table-dark table-sm" id="myTable">
+                <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Version</th>
+                <th scope="col">Vulnerability</th>
+                <td scope="col" class="hidden">Vulnerability Description</td>
+                <th scope="col">Latest Updates</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>3.1.2</td>
+                <td></td>
+                <td class="hidden"></td>
+                <td>3.2.1</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="hidden"></td>
+                <td></td>
+                
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="hidden"></td>
+                <td></td>
+                
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="hidden"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="hidden"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="hidden"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="hidden"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="hidden"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="hidden"></td>
+                <td></td>
+              </tr>
+            
+            </tbody>
+            </table>
+          </div>
+        </div>
+    </section>
+
+    
+    <section id="buttons">
+        <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Check Vulnerability 
+                </h3>
+                <p>This button initiates the check vulnerability function which checks all the existing dependencies for vulnerabilities.
+                </p>
+                <!-- <a>
+                 href="#" id="notificationButton" class="btn btn-primary checkvul"> 
+                    button
+                  </a>  -->
+                  <button type="button" id="notificationButton" class="btn btn-primary checkvul"
+                    data-bs-toggle="popover" data-bs-placement="right"
+                    data-bs-custom-class="custom-popover"
+                    data-bs-title="hi"
+                    data-bs-content="you have received a notification.">
+                    button
+                    </button>
+                    
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Check for Updates
+                </h3>
+                <p>This button initiates the update function which check if there is any update for any existing dependencies.
+                </p>
+                <a href="#" class="btn btn-primary checkupdate">
+                    button
+                  </a>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Upgrade</h3>
+                <p>This button allows user to upgrade the dependencies with 1-click.
+                </p>
+                <a href="#" class="btn btn-primary upgrade">
+                    button
+                  </a>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Revert</h3>
+                <p>This button provides user functionality to go back to previous dependencies incase the code breaks due to upgrade of dependencies.</p>
+                <a href="#" class="btn btn-primary revert">
+                    button
+                  </a>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+              <div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+  
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $(".checkupdate").hide();
+            $(".checkvul").click(function() {
+                $(".checkupdate").show();
+                
+            });
+
+            $(".upgrade").hide();
+            $(".checkupdate").click(function() {
+                $(".upgrade").show();
+            });
+
+            $(".revert").hide();
+            $(".upgrade").click(function() {
+                $(".revert").show();
+            });
+
+        });
+
+        $(".hidden").addClass("hidden1");
+        $(".checkvul").click(function(){
+            $(".hidden").removeClass("hidden1");
+        })
+
+        $(".checkvul").click(function() {
+            $(".bell").addClass("animatedbell");
+            });
+
+
+    </script>
+    
+    
+    
+</body>
+</html>
